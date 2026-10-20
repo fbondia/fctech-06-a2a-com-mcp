@@ -1,0 +1,69 @@
+{
+  "completedAt": "2026-10-20T21:16:10.490Z",
+  "mcpUrl": "http://127.0.0.1:17301/mcp",
+  "agentUrl": "http://127.0.0.1:17300",
+  "passed": 15,
+  "failed": 0,
+  "checks": [
+    {
+      "status": "PASS",
+      "message": "Agent Card HTTP 200, A2A 1.0 e skill reservar-sala"
+    },
+    {
+      "status": "PASS",
+      "message": "Conflito pausa a Task com alternativas na ordem exigida"
+    },
+    {
+      "status": "PASS",
+      "message": "Escolha fora das alternativas preserva INPUT_REQUIRED"
+    },
+    {
+      "status": "PASS",
+      "message": "Retomada conclui na sala escolhida; GetTask preserva identidade e artifact com politica"
+    },
+    {
+      "status": "PASS",
+      "message": "Task terminal rejeita continuacao"
+    },
+    {
+      "status": "PASS",
+      "message": "Recusa termina em CANCELED"
+    },
+    {
+      "status": "PASS",
+      "message": "Sala inexistente termina em FAILED com a mensagem da tool no historico"
+    },
+    {
+      "status": "PASS",
+      "message": "Duas Tasks simultaneamente pausadas retomam sem trocar estado"
+    },
+    {
+      "status": "PASS",
+      "message": "Nenhuma resposta A2A expoe requestState"
+    },
+    {
+      "status": "PASS",
+      "message": "Log comprova descoberta antes da chamada, trace original e id novo no retry"
+    },
+    {
+      "status": "PASS",
+      "message": "Limitacao callTool/outputSchema reproduzida; request manual retorna input_required"
+    },
+    {
+      "status": "PASS",
+      "message": "Sem elicitation form: HTTP 400 e -32021 com requiredCapabilities"
+    },
+    {
+      "status": "PASS",
+      "message": "requestState adulterado e rejeitado com -32602"
+    },
+    {
+      "status": "PASS",
+      "message": "Decline MCP conclui sem reservar e sem isError"
+    },
+    {
+      "status": "PASS",
+      "message": "Estado valido retoma apos reinicio real do MCP; argumentos adulterados nao alteram o pedido selado"
+    }
+  ]
+}

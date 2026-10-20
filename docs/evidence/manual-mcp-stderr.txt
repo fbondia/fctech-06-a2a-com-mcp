@@ -1,0 +1,37 @@
+MCP http://127.0.0.1:17301/mcp
+{"method":"server/discover","id":"server-discover-probe-1","traceparent":"00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"}
+{"method":"tools/list","id":0,"traceparent":"00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"}
+{"method":"resources/read","id":1,"traceparent":"00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"}
+{"method":"tools/call","id":2,"traceparent":"00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"}
+{"method":"tools/call","id":3,"traceparent":"00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"}
+{"method":"server/discover","id":"server-discover-probe-1","traceparent":null}
+{"method":"tools/list","id":0,"traceparent":null}
+{"method":"resources/read","id":1,"traceparent":null}
+{"method":"tools/call","id":2,"traceparent":null}
+{"method":"tools/call","id":3,"traceparent":null}
+{"method":"server/discover","id":"server-discover-probe-1","traceparent":null}
+{"method":"tools/list","id":0,"traceparent":null}
+{"method":"resources/read","id":1,"traceparent":null}
+{"method":"tools/call","id":2,"traceparent":null}
+{"method":"server/discover","id":"server-discover-probe-1","traceparent":null}
+{"method":"server/discover","id":"server-discover-probe-1","traceparent":null}
+{"method":"tools/list","id":0,"traceparent":null}
+{"method":"tools/list","id":0,"traceparent":null}
+{"method":"resources/read","id":1,"traceparent":null}
+{"method":"resources/read","id":1,"traceparent":null}
+{"method":"tools/call","id":2,"traceparent":null}
+{"method":"tools/call","id":2,"traceparent":null}
+{"method":"tools/call","id":3,"traceparent":null}
+{"method":"tools/call","id":3,"traceparent":null}
+MCP http://127.0.0.1:17301/mcp
+{"method":"server/discover","id":"server-discover-probe-1","traceparent":null}
+{"method":"tools/list","id":0,"traceparent":null}
+{"method":"resources/read","id":1,"traceparent":null}
+{"method":"tools/call","id":2,"traceparent":null}
+{"method":"tools/call","id":3,"traceparent":null}
+{"method":"tools/call","id":1013,"traceparent":null}
+{"method":"tools/call","id":1014,"traceparent":null}
+{"method":"tools/call","id":1015,"traceparent":null}
+{"method":"tools/call","id":1016,"traceparent":null}
+MCP http://127.0.0.1:17301/mcp
+{"method":"tools/call","id":1017,"traceparent":null}

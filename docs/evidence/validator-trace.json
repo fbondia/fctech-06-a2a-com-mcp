@@ -1,0 +1,57 @@
+{
+  "traceId": "53af249dfd674437f5fb8b3b2af01b3f",
+  "matchedRequests": [
+    {
+      "method": "tools/call",
+      "id": "dbd67a56e744",
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    },
+    {
+      "method": "server/discover",
+      "id": "server-discover-probe-1",
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    },
+    {
+      "method": "tools/list",
+      "id": 0,
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    },
+    {
+      "method": "resources/read",
+      "id": 1,
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    },
+    {
+      "method": "tools/call",
+      "id": 2,
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    },
+    {
+      "method": "server/discover",
+      "id": "server-discover-probe-1",
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    },
+    {
+      "method": "tools/list",
+      "id": 0,
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    },
+    {
+      "method": "resources/read",
+      "id": 1,
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    },
+    {
+      "method": "tools/call",
+      "id": 2,
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    },
+    {
+      "method": "tools/call",
+      "id": 3,
+      "traceparent": "00-53af249dfd674437f5fb8b3b2af01b3f-6a68d644a13dd374-01"
+    }
+  ],
+  "agentDiscoveriesBeforeCalls": 2,
+  "allAgentGroupsDiscoverToolsBeforeCalling": true
+}

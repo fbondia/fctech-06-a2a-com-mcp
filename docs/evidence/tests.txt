@@ -1,0 +1,27 @@
+
+> fctech-06-a-ponte@1.0.0 test
+> node --test tests/*.test.js
+
+✔ ponte HTTP isola Tasks, preserva estado/trace, headers e id novo no retry (91.475792ms)
+✔ decline conclui CANCELED e erro de dominio fica no historico FAILED (19.919875ms)
+✔ GetTask observa WORKING durante I/O e nao admite duas continuacoes simultaneas (0.589417ms)
+✔ SDK 2.3.1: callTool/outputSchema falha em pausa, request/manual permite a ponte (19.491042ms)
+✔ requestState continua valido apos reiniciar o processo MCP; outra secret rejeita (399.497459ms)
+✔ metadata e obrigatoria em cada request e headers incoerentes sao -32020 (20.92675ms)
+✔ resource/schema/resultados e logs conservam o contrato sem registrar estado (15.979875ms)
+✔ capability deve declarar form e nao e herdada de request anterior (6.521792ms)
+✔ MRTR valida chave, enum e tool; decline/cancel nunca criam reservas (6.831916ms)
+✔ requestState detecta adulteracao e expiracao sem aguardar dez minutos (3.319666ms)
+✔ configuracao falha sem secret de pelo menos 32 bytes (0.280083ms)
+✔ politica aceita limites 08h/20h, 2h, passado e offsets equivalentes (2.130375ms)
+✔ validacoes tem ordem e mensagens exatas nos dois caminhos de dominio (0.892375ms)
+✔ sobreposicao e semiaberta e reservas criadas aparecem nas consultas (0.336875ms)
+✔ alternativas limitam a tres, ordenam capacidade/id e excluem ocupadas (0.439791ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 706.964958

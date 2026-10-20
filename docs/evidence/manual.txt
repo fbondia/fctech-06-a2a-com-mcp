@@ -1,0 +1,15 @@
+PASS Agent Card HTTP 200, A2A 1.0 e skill reservar-sala
+PASS Conflito pausa a Task com alternativas na ordem exigida
+PASS Escolha fora das alternativas preserva INPUT_REQUIRED
+PASS Retomada conclui na sala escolhida; GetTask preserva identidade e artifact com politica
+PASS Task terminal rejeita continuacao
+PASS Recusa termina em CANCELED
+PASS Sala inexistente termina em FAILED com a mensagem da tool no historico
+PASS Duas Tasks simultaneamente pausadas retomam sem trocar estado
+PASS Nenhuma resposta A2A expoe requestState
+PASS Log comprova descoberta antes da chamada, trace original e id novo no retry
+PASS Limitacao callTool/outputSchema reproduzida; request manual retorna input_required
+PASS Sem elicitation form: HTTP 400 e -32021 com requiredCapabilities
+PASS requestState adulterado e rejeitado com -32602
+PASS Decline MCP conclui sem reservar e sem isError
+PASS Estado valido retoma apos reinicio real do MCP; argumentos adulterados nao alteram o pedido selado

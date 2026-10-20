@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-10-20T18:15:46.373558-03:00",
+  "timezone": "America/Sao_Paulo",
+  "node": "v24.12.0",
+  "npm": "11.6.2",
+  "python": "Python 3.14.7",
+  "ports": {
+    "agent": 17300,
+    "mcp": 17301
+  },
+  "clean_dependency_install": true,
+  "commands": [
+    {
+      "command": "npm test",
+      "exit_code": 0,
+      "output": "tests.txt"
+    },
+    {
+      "command": "npm run verify",
+      "exit_code": 0,
+      "output": "verify.txt"
+    },
+    {
+      "command": "node scripts/evidence.js",
+      "exit_code": 0,
+      "output": "manual.txt"
+    }
+  ],
+  "completed_at": "2026-10-20T18:16:10.496549-03:00"
+}

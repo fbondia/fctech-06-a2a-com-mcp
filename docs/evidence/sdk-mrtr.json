@@ -1,0 +1,8 @@
+{
+  "sdkVersion": "2.3.1",
+  "callToolError": {
+    "code": -32600,
+    "message": "Tool reservar_sala has an output schema but did not return structured content"
+  },
+  "requestWithAllowInputRequired": "input_required"
+}

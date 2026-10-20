@@ -1,0 +1,33 @@
+{
+  "traceparent": "00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01",
+  "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+  "requests": [
+    {
+      "method": "server/discover",
+      "id": "server-discover-probe-1",
+      "traceparent": "00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"
+    },
+    {
+      "method": "tools/list",
+      "id": 0,
+      "traceparent": "00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"
+    },
+    {
+      "method": "resources/read",
+      "id": 1,
+      "traceparent": "00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"
+    },
+    {
+      "method": "tools/call",
+      "id": 2,
+      "traceparent": "00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"
+    },
+    {
+      "method": "tools/call",
+      "id": 3,
+      "traceparent": "00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"
+    }
+  ],
+  "initialRequestId": 2,
+  "retryRequestId": 3
+}

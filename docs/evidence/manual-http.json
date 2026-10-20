@@ -1,0 +1,1712 @@
+[
+  {
+    "label": "a2a-pausa",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json",
+        "traceparent": "00-b106892b69fec1c3c292dfebb80e18e6-23f6aab096eb3c95-01"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1001,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "f38f1c4d-e91a-4a09-a5b9-5a04f873d527",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1001,
+        "result": {
+          "task": {
+            "id": "9f7c315d-9199-4150-b00b-8135ad32083e",
+            "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+            "history": [
+              {
+                "messageId": "f38f1c4d-e91a-4a09-a5b9-5a04f873d527",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "817a48fe-8b31-420c-bcd7-de4700ec354b",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "06f5bbc0-f17e-406a-9083-2da40543c626",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "6cee2d60-834e-4dfa-9997-c51045d390c2",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca, sala-mirante"
+                  }
+                ]
+              }
+            ],
+            "artifacts": [],
+            "status": {
+              "state": "TASK_STATE_INPUT_REQUIRED",
+              "timestamp": "2026-10-20T21:16:10.124Z",
+              "message": {
+                "messageId": "6cee2d60-834e-4dfa-9997-c51045d390c2",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca, sala-mirante"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-escolha-invalida",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1002,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "100aee6d-90f3-45d5-82bd-79672d7fe640",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "escolha=sala-aquario"
+              }
+            ],
+            "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e"
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1002,
+        "result": {
+          "task": {
+            "id": "9f7c315d-9199-4150-b00b-8135ad32083e",
+            "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+            "history": [
+              {
+                "messageId": "f38f1c4d-e91a-4a09-a5b9-5a04f873d527",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "817a48fe-8b31-420c-bcd7-de4700ec354b",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "06f5bbc0-f17e-406a-9083-2da40543c626",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "6cee2d60-834e-4dfa-9997-c51045d390c2",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca, sala-mirante"
+                  }
+                ]
+              },
+              {
+                "messageId": "100aee6d-90f3-45d5-82bd-79672d7fe640",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "escolha=sala-aquario"
+                  }
+                ],
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e"
+              },
+              {
+                "messageId": "9653f761-b206-4d7a-aa8b-cb9085fcdf96",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca, sala-mirante"
+                  }
+                ]
+              }
+            ],
+            "artifacts": [],
+            "status": {
+              "state": "TASK_STATE_INPUT_REQUIRED",
+              "timestamp": "2026-10-20T21:16:10.127Z",
+              "message": {
+                "messageId": "9653f761-b206-4d7a-aa8b-cb9085fcdf96",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca, sala-mirante"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-retomada",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1003,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "a53811e6-d902-416a-89ea-6dfd3677fe26",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "escolha=sala-mirante"
+              }
+            ],
+            "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e"
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1003,
+        "result": {
+          "task": {
+            "id": "9f7c315d-9199-4150-b00b-8135ad32083e",
+            "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+            "history": [
+              {
+                "messageId": "f38f1c4d-e91a-4a09-a5b9-5a04f873d527",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "817a48fe-8b31-420c-bcd7-de4700ec354b",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "06f5bbc0-f17e-406a-9083-2da40543c626",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "6cee2d60-834e-4dfa-9997-c51045d390c2",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca, sala-mirante"
+                  }
+                ]
+              },
+              {
+                "messageId": "100aee6d-90f3-45d5-82bd-79672d7fe640",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "escolha=sala-aquario"
+                  }
+                ],
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e"
+              },
+              {
+                "messageId": "9653f761-b206-4d7a-aa8b-cb9085fcdf96",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca, sala-mirante"
+                  }
+                ]
+              },
+              {
+                "messageId": "a53811e6-d902-416a-89ea-6dfd3677fe26",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "escolha=sala-mirante"
+                  }
+                ],
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e"
+              },
+              {
+                "messageId": "63d4bc1c-7c4e-4086-86fb-26a9a365b101",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Retomando a reserva no servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "fb91f971-1ca3-4e7a-a476-f4e83ed8b473",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Reserva res-0003 confirmada na sala-mirante."
+                  }
+                ]
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactId": "b0d43899-cc3b-46ab-947b-be516575e836",
+                "name": "reserva",
+                "parts": [
+                  {
+                    "text": "{\"reserva\":\"res-0003\",\"reservado\":true,\"sala\":\"sala-mirante\",\"inicio\":\"2026-11-03T14:00:00-03:00\",\"fim\":\"2026-11-03T15:00:00-03:00\",\"responsavel\":\"Doc\",\"politica\":\"2026-11-01\",\"motivo\":null}"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "state": "TASK_STATE_COMPLETED",
+              "timestamp": "2026-10-20T21:16:10.134Z",
+              "message": {
+                "messageId": "fb91f971-1ca3-4e7a-a476-f4e83ed8b473",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Reserva res-0003 confirmada na sala-mirante."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-get-task",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1004,
+        "method": "GetTask",
+        "params": {
+          "id": "9f7c315d-9199-4150-b00b-8135ad32083e"
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1004,
+        "result": {
+          "task": {
+            "id": "9f7c315d-9199-4150-b00b-8135ad32083e",
+            "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+            "history": [
+              {
+                "messageId": "f38f1c4d-e91a-4a09-a5b9-5a04f873d527",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "817a48fe-8b31-420c-bcd7-de4700ec354b",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "06f5bbc0-f17e-406a-9083-2da40543c626",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "6cee2d60-834e-4dfa-9997-c51045d390c2",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca, sala-mirante"
+                  }
+                ]
+              },
+              {
+                "messageId": "100aee6d-90f3-45d5-82bd-79672d7fe640",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "escolha=sala-aquario"
+                  }
+                ],
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e"
+              },
+              {
+                "messageId": "9653f761-b206-4d7a-aa8b-cb9085fcdf96",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca, sala-mirante"
+                  }
+                ]
+              },
+              {
+                "messageId": "a53811e6-d902-416a-89ea-6dfd3677fe26",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "escolha=sala-mirante"
+                  }
+                ],
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e"
+              },
+              {
+                "messageId": "63d4bc1c-7c4e-4086-86fb-26a9a365b101",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Retomando a reserva no servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "fb91f971-1ca3-4e7a-a476-f4e83ed8b473",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Reserva res-0003 confirmada na sala-mirante."
+                  }
+                ]
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactId": "b0d43899-cc3b-46ab-947b-be516575e836",
+                "name": "reserva",
+                "parts": [
+                  {
+                    "text": "{\"reserva\":\"res-0003\",\"reservado\":true,\"sala\":\"sala-mirante\",\"inicio\":\"2026-11-03T14:00:00-03:00\",\"fim\":\"2026-11-03T15:00:00-03:00\",\"responsavel\":\"Doc\",\"politica\":\"2026-11-01\",\"motivo\":null}"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "state": "TASK_STATE_COMPLETED",
+              "timestamp": "2026-10-20T21:16:10.134Z",
+              "message": {
+                "messageId": "fb91f971-1ca3-4e7a-a476-f4e83ed8b473",
+                "role": "ROLE_AGENT",
+                "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e",
+                "contextId": "8ef18ea2-a608-4427-b672-d296bedc44a4",
+                "parts": [
+                  {
+                    "text": "Reserva res-0003 confirmada na sala-mirante."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-estado-terminal",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1005,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "f6e28ee6-c145-4c41-bd6c-49be2038e7e5",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "escolha=recusar"
+              }
+            ],
+            "taskId": "9f7c315d-9199-4150-b00b-8135ad32083e"
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1005,
+        "error": {
+          "code": -32602,
+          "message": "Task nao aceita continuacao no estado corrente"
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-pausa-recusa",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1006,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "1f095932-4d37-4e7c-b96b-27d744adf5ee",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1006,
+        "result": {
+          "task": {
+            "id": "ad255694-5342-4e62-999d-c0255772e05a",
+            "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+            "history": [
+              {
+                "messageId": "1f095932-4d37-4e7c-b96b-27d744adf5ee",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "5f4cc810-f3c9-4148-a1fa-05454410172e",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "dd9992fc-0414-4590-88e0-027ea4b63e87",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "996f4673-ad14-4d0a-aa57-0805c8c5557d",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca"
+                  }
+                ]
+              }
+            ],
+            "artifacts": [],
+            "status": {
+              "state": "TASK_STATE_INPUT_REQUIRED",
+              "timestamp": "2026-10-20T21:16:10.148Z",
+              "message": {
+                "messageId": "996f4673-ad14-4d0a-aa57-0805c8c5557d",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-recusa",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1007,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "6c862d92-1e70-41dc-adca-6688af62783f",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "escolha=recusar"
+              }
+            ],
+            "taskId": "ad255694-5342-4e62-999d-c0255772e05a"
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1007,
+        "result": {
+          "task": {
+            "id": "ad255694-5342-4e62-999d-c0255772e05a",
+            "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+            "history": [
+              {
+                "messageId": "1f095932-4d37-4e7c-b96b-27d744adf5ee",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "5f4cc810-f3c9-4148-a1fa-05454410172e",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "dd9992fc-0414-4590-88e0-027ea4b63e87",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "996f4673-ad14-4d0a-aa57-0805c8c5557d",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca"
+                  }
+                ]
+              },
+              {
+                "messageId": "6c862d92-1e70-41dc-adca-6688af62783f",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "escolha=recusar"
+                  }
+                ],
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a"
+              },
+              {
+                "messageId": "e1444bb0-3783-4fdc-b5ac-eada792ed4f9",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "Retomando a reserva no servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "30c20abd-e835-4ee9-aeb7-4412b90e358a",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "recusado"
+                  }
+                ]
+              }
+            ],
+            "artifacts": [],
+            "status": {
+              "state": "TASK_STATE_CANCELED",
+              "timestamp": "2026-10-20T21:16:10.154Z",
+              "message": {
+                "messageId": "30c20abd-e835-4ee9-aeb7-4412b90e358a",
+                "role": "ROLE_AGENT",
+                "taskId": "ad255694-5342-4e62-999d-c0255772e05a",
+                "contextId": "4a51e7d3-5173-4c99-b141-c0d3000b4f0b",
+                "parts": [
+                  {
+                    "text": "recusado"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-sala-inexistente",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1008,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "5f91f600-1ecf-415f-a1b7-f7dcb3344847",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "reservar sala=sala-inexistente inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1008,
+        "result": {
+          "task": {
+            "id": "960fea7c-4746-4574-9dfe-6d33327364f8",
+            "contextId": "ac6631ed-d35c-4fdb-9f18-9da4ec90947c",
+            "history": [
+              {
+                "messageId": "5f91f600-1ecf-415f-a1b7-f7dcb3344847",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-inexistente inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "00f94dc1-71bd-4f2b-b053-eb5b38033798",
+                "role": "ROLE_AGENT",
+                "taskId": "960fea7c-4746-4574-9dfe-6d33327364f8",
+                "contextId": "ac6631ed-d35c-4fdb-9f18-9da4ec90947c",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "6cfa7b4a-b929-4142-ae06-7ccadb2c6a73",
+                "role": "ROLE_AGENT",
+                "taskId": "960fea7c-4746-4574-9dfe-6d33327364f8",
+                "contextId": "ac6631ed-d35c-4fdb-9f18-9da4ec90947c",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "7c420c5a-67f0-4eb4-8c06-ea6a54bc9f69",
+                "role": "ROLE_AGENT",
+                "taskId": "960fea7c-4746-4574-9dfe-6d33327364f8",
+                "contextId": "ac6631ed-d35c-4fdb-9f18-9da4ec90947c",
+                "parts": [
+                  {
+                    "text": "Sala inexistente: sala-inexistente"
+                  }
+                ]
+              }
+            ],
+            "artifacts": [],
+            "status": {
+              "state": "TASK_STATE_FAILED",
+              "timestamp": "2026-10-20T21:16:10.161Z",
+              "message": {
+                "messageId": "7c420c5a-67f0-4eb4-8c06-ea6a54bc9f69",
+                "role": "ROLE_AGENT",
+                "taskId": "960fea7c-4746-4574-9dfe-6d33327364f8",
+                "contextId": "ac6631ed-d35c-4fdb-9f18-9da4ec90947c",
+                "parts": [
+                  {
+                    "text": "Sala inexistente: sala-inexistente"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-paralela-b-pausa",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1010,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "1d2bb053-a32e-4cbb-91f4-bcec5efbc794",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "reservar sala=sala-fusca inicio=2026-11-03T16:00:00-03:00 fim=2026-11-03T17:00:00-03:00 responsavel=Doc"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1010,
+        "result": {
+          "task": {
+            "id": "283598ef-037f-4233-b111-f90a925192cd",
+            "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+            "history": [
+              {
+                "messageId": "1d2bb053-a32e-4cbb-91f4-bcec5efbc794",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-fusca inicio=2026-11-03T16:00:00-03:00 fim=2026-11-03T17:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "24a331bb-b024-42f3-a041-860977bcce6b",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "a2b2db34-4331-491c-afcb-cb3dd70b509c",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "87bed3b1-287c-49da-be22-f60031351ef1",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-garagem, sala-mirante"
+                  }
+                ]
+              }
+            ],
+            "artifacts": [],
+            "status": {
+              "state": "TASK_STATE_INPUT_REQUIRED",
+              "timestamp": "2026-10-20T21:16:10.171Z",
+              "message": {
+                "messageId": "87bed3b1-287c-49da-be22-f60031351ef1",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-garagem, sala-mirante"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-paralela-a-pausa",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1009,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "e086f4bf-f757-4dc1-b660-149a3eaa345d",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1009,
+        "result": {
+          "task": {
+            "id": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+            "contextId": "808711f0-742a-499d-89c7-094646d63731",
+            "history": [
+              {
+                "messageId": "e086f4bf-f757-4dc1-b660-149a3eaa345d",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "1d4817d2-efc9-46ef-a401-24cba2bbd6ca",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "b2a5e57a-3fb9-4f53-ba51-52e4fff8f1ec",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "fcb4be65-f6f6-4221-b805-b8b6edf1fd4f",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca"
+                  }
+                ]
+              }
+            ],
+            "artifacts": [],
+            "status": {
+              "state": "TASK_STATE_INPUT_REQUIRED",
+              "timestamp": "2026-10-20T21:16:10.172Z",
+              "message": {
+                "messageId": "fcb4be65-f6f6-4221-b805-b8b6edf1fd4f",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-paralela-b-retomada",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1011,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "c6101d4c-ead1-45f0-855f-3ff3b6543826",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "escolha=sala-garagem"
+              }
+            ],
+            "taskId": "283598ef-037f-4233-b111-f90a925192cd"
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1011,
+        "result": {
+          "task": {
+            "id": "283598ef-037f-4233-b111-f90a925192cd",
+            "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+            "history": [
+              {
+                "messageId": "1d2bb053-a32e-4cbb-91f4-bcec5efbc794",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-fusca inicio=2026-11-03T16:00:00-03:00 fim=2026-11-03T17:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "24a331bb-b024-42f3-a041-860977bcce6b",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "a2b2db34-4331-491c-afcb-cb3dd70b509c",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "87bed3b1-287c-49da-be22-f60031351ef1",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-garagem, sala-mirante"
+                  }
+                ]
+              },
+              {
+                "messageId": "c6101d4c-ead1-45f0-855f-3ff3b6543826",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "escolha=sala-garagem"
+                  }
+                ],
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd"
+              },
+              {
+                "messageId": "db429061-b5ba-4cad-9c02-b9eaee71cbf0",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "Retomando a reserva no servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "6b0cfde8-2219-4bd9-939a-6263b99f8d99",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "Reserva res-0004 confirmada na sala-garagem."
+                  }
+                ]
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactId": "436eef03-84fd-4518-bf1d-dd61a967b6b6",
+                "name": "reserva",
+                "parts": [
+                  {
+                    "text": "{\"reserva\":\"res-0004\",\"reservado\":true,\"sala\":\"sala-garagem\",\"inicio\":\"2026-11-03T16:00:00-03:00\",\"fim\":\"2026-11-03T17:00:00-03:00\",\"responsavel\":\"Doc\",\"politica\":\"2026-11-01\",\"motivo\":null}"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "state": "TASK_STATE_COMPLETED",
+              "timestamp": "2026-10-20T21:16:10.175Z",
+              "message": {
+                "messageId": "6b0cfde8-2219-4bd9-939a-6263b99f8d99",
+                "role": "ROLE_AGENT",
+                "taskId": "283598ef-037f-4233-b111-f90a925192cd",
+                "contextId": "b28a39fb-0285-4237-a369-e7d9edb9c7f1",
+                "parts": [
+                  {
+                    "text": "Reserva res-0004 confirmada na sala-garagem."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "a2a-paralela-a-retomada",
+    "request": {
+      "url": "http://127.0.0.1:17300/a2a",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1012,
+        "method": "SendMessage",
+        "params": {
+          "message": {
+            "messageId": "ca1480bc-7996-4c2e-ad79-3acf10d0a095",
+            "role": "ROLE_USER",
+            "parts": [
+              {
+                "text": "escolha=sala-fusca"
+              }
+            ],
+            "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c"
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1012,
+        "result": {
+          "task": {
+            "id": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+            "contextId": "808711f0-742a-499d-89c7-094646d63731",
+            "history": [
+              {
+                "messageId": "e086f4bf-f757-4dc1-b660-149a3eaa345d",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "reservar sala=sala-garagem inicio=2026-11-03T14:00:00-03:00 fim=2026-11-03T15:00:00-03:00 responsavel=Doc"
+                  }
+                ]
+              },
+              {
+                "messageId": "1d4817d2-efc9-46ef-a401-24cba2bbd6ca",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "Pedido recebido"
+                  }
+                ]
+              },
+              {
+                "messageId": "b2a5e57a-3fb9-4f53-ba51-52e4fff8f1ec",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "Consultando o servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "fcb4be65-f6f6-4221-b805-b8b6edf1fd4f",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "alternativas: sala-fusca"
+                  }
+                ]
+              },
+              {
+                "messageId": "ca1480bc-7996-4c2e-ad79-3acf10d0a095",
+                "role": "ROLE_USER",
+                "parts": [
+                  {
+                    "text": "escolha=sala-fusca"
+                  }
+                ],
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c"
+              },
+              {
+                "messageId": "28a46a0c-1b72-4f18-9e44-20772f1038e2",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "Retomando a reserva no servidor MCP"
+                  }
+                ]
+              },
+              {
+                "messageId": "09707c8a-36ab-4dc1-b14d-bfa6181c23d5",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "Reserva res-0005 confirmada na sala-fusca."
+                  }
+                ]
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactId": "ea73fdef-0e6d-4415-843e-e69861fa606d",
+                "name": "reserva",
+                "parts": [
+                  {
+                    "text": "{\"reserva\":\"res-0005\",\"reservado\":true,\"sala\":\"sala-fusca\",\"inicio\":\"2026-11-03T14:00:00-03:00\",\"fim\":\"2026-11-03T15:00:00-03:00\",\"responsavel\":\"Doc\",\"politica\":\"2026-11-01\",\"motivo\":null}"
+                  }
+                ]
+              }
+            ],
+            "status": {
+              "state": "TASK_STATE_COMPLETED",
+              "timestamp": "2026-10-20T21:16:10.178Z",
+              "message": {
+                "messageId": "09707c8a-36ab-4dc1-b14d-bfa6181c23d5",
+                "role": "ROLE_AGENT",
+                "taskId": "a3e9ceec-816b-478c-8841-1db1557fd83c",
+                "contextId": "808711f0-742a-499d-89c7-094646d63731",
+                "parts": [
+                  {
+                    "text": "Reserva res-0005 confirmada na sala-fusca."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "mcp-sem-capability",
+    "request": {
+      "url": "http://127.0.0.1:17301/mcp",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/event-stream",
+        "MCP-Protocol-Version": "2026-07-28",
+        "Mcp-Method": "tools/call",
+        "Mcp-Name": "reservar_sala"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1013,
+        "method": "tools/call",
+        "params": {
+          "name": "reservar_sala",
+          "arguments": {
+            "sala": "sala-garagem",
+            "inicio": "2026-11-03T14:00:00-03:00",
+            "fim": "2026-11-03T15:00:00-03:00",
+            "responsavel": "Doc"
+          },
+          "_meta": {
+            "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+            "io.modelcontextprotocol/clientCapabilities": {}
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 400,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1013,
+        "error": {
+          "code": -32021,
+          "message": "Cannot request input 'f93e7c86-2cf2-4a25-805a-fd72d0e58e98' (elicitation/create): the request's client capabilities do not declare the required capability",
+          "data": {
+            "requiredCapabilities": {
+              "elicitation": {
+                "form": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "mcp-pausa-integridade",
+    "request": {
+      "url": "http://127.0.0.1:17301/mcp",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/event-stream",
+        "MCP-Protocol-Version": "2026-07-28",
+        "Mcp-Method": "tools/call",
+        "Mcp-Name": "reservar_sala"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1014,
+        "method": "tools/call",
+        "params": {
+          "name": "reservar_sala",
+          "arguments": {
+            "sala": "sala-garagem",
+            "inicio": "2026-11-03T14:00:00-03:00",
+            "fim": "2026-11-03T15:00:00-03:00",
+            "responsavel": "Doc"
+          },
+          "_meta": {
+            "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+            "io.modelcontextprotocol/clientCapabilities": {
+              "elicitation": {
+                "form": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "result": {
+          "resultType": "input_required",
+          "inputRequests": {
+            "9522be0b-9768-4354-b838-baf5704d0891": {
+              "method": "elicitation/create",
+              "params": {
+                "message": "A sala pedida esta ocupada nesse intervalo. Escolha uma alternativa.",
+                "requestedSchema": {
+                  "type": "object",
+                  "properties": {
+                    "sala": {
+                      "type": "string",
+                      "enum": [
+                        "sala-fusca",
+                        "sala-mirante"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "sala"
+                  ]
+                },
+                "mode": "form"
+              }
+            }
+          },
+          "requestState": "v1.eyJwIjp7InRvb2wiOiJyZXNlcnZhcl9zYWxhIiwicGVkaWRvIjp7InNhbGEiOiJzYWxhLWdhcmFnZW0iLCJpbmljaW8iOiIyMDI2LTExLTAzVDE0OjAwOjAwLTAzOjAwIiwiZmltIjoiMjAyNi0xMS0wM1QxNTowMDowMC0wMzowMCIsInJlc3BvbnNhdmVsIjoiRG9jIn0sImFsdGVybmF0aXZhcyI6WyJzYWxhLWZ1c2NhIiwic2FsYS1taXJhbnRlIl0sImNoYXZlIjoiOTUyMmJlMGItOTc2OC00MzU0LWI4MzgtYmFmNTcwNGQwODkxIn0sImV4cCI6MTc5MjUzMTU3MCwiYiI6Ik0yRXNZOGFYVl85VThyRE5mMENzSHcifQ.hrs1kPgHh3JfY6pX44jlemZ2u8yBS1smnUwv8EnQJsY",
+          "_meta": {
+            "io.modelcontextprotocol/serverInfo": {
+              "name": "central-de-salas",
+              "version": "1.0.0"
+            }
+          }
+        },
+        "jsonrpc": "2.0",
+        "id": 1014
+      }
+    }
+  },
+  {
+    "label": "mcp-estado-adulterado",
+    "request": {
+      "url": "http://127.0.0.1:17301/mcp",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/event-stream",
+        "MCP-Protocol-Version": "2026-07-28",
+        "Mcp-Method": "tools/call",
+        "Mcp-Name": "reservar_sala"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1015,
+        "method": "tools/call",
+        "params": {
+          "name": "reservar_sala",
+          "arguments": {
+            "sala": "sala-garagem",
+            "inicio": "2026-11-03T14:00:00-03:00",
+            "fim": "2026-11-03T15:00:00-03:00",
+            "responsavel": "Doc"
+          },
+          "requestState": "v1.eyJwIjp7InRvb2wiOiJyZXNlcnZhcl9zYWxhIiwicGVkaWRvIjp7InNhbGEiOiJzYWxhLWdhcmFnZW0iLCJpbmljaW8iOiIyMDI2LTExLTAzVDE0OjAwOjAwLTAzOjAwIiwiZmltIjoiMjAyNi0xMS0wM1QxNTowMDowMC0wMzowMCIsInJlc3BvbnNhdmVsIjoiRG9jIn0sImFsdGVybmF0aXZhcyI6WyJzYWxhLWZ1c2NhIiwic2FsYS1taXJhbnRlIl0sImNoYXZlIjoiOTUyMmJlMGItOTc2OC00MzU0LWI4MzgtYmFmNTcwNGQwODkxIn0sImV4cCI6MTc5MjUzMTU3MCwiYiI6Ik0yRXNZOGFYVl85VThyRE5mMENzSHcifQ.hrs1kPgHh3JfY6pX44jlemZ2u8yBS1smnUwv8AAAAAA",
+          "inputResponses": {
+            "9522be0b-9768-4354-b838-baf5704d0891": {
+              "action": "accept",
+              "content": {
+                "sala": "sala-fusca"
+              }
+            }
+          },
+          "_meta": {
+            "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+            "io.modelcontextprotocol/clientCapabilities": {
+              "elicitation": {
+                "form": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1015,
+        "error": {
+          "code": -32602,
+          "message": "Invalid or expired requestState",
+          "data": {
+            "reason": "invalid_request_state"
+          }
+        }
+      }
+    }
+  },
+  {
+    "label": "mcp-recusa",
+    "request": {
+      "url": "http://127.0.0.1:17301/mcp",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/event-stream",
+        "MCP-Protocol-Version": "2026-07-28",
+        "Mcp-Method": "tools/call",
+        "Mcp-Name": "reservar_sala"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1016,
+        "method": "tools/call",
+        "params": {
+          "name": "reservar_sala",
+          "arguments": {
+            "sala": "sala-garagem",
+            "inicio": "2026-11-03T14:00:00-03:00",
+            "fim": "2026-11-03T15:00:00-03:00",
+            "responsavel": "Doc"
+          },
+          "requestState": "v1.eyJwIjp7InRvb2wiOiJyZXNlcnZhcl9zYWxhIiwicGVkaWRvIjp7InNhbGEiOiJzYWxhLWdhcmFnZW0iLCJpbmljaW8iOiIyMDI2LTExLTAzVDE0OjAwOjAwLTAzOjAwIiwiZmltIjoiMjAyNi0xMS0wM1QxNTowMDowMC0wMzowMCIsInJlc3BvbnNhdmVsIjoiRG9jIn0sImFsdGVybmF0aXZhcyI6WyJzYWxhLWZ1c2NhIiwic2FsYS1taXJhbnRlIl0sImNoYXZlIjoiOTUyMmJlMGItOTc2OC00MzU0LWI4MzgtYmFmNTcwNGQwODkxIn0sImV4cCI6MTc5MjUzMTU3MCwiYiI6Ik0yRXNZOGFYVl85VThyRE5mMENzSHcifQ.hrs1kPgHh3JfY6pX44jlemZ2u8yBS1smnUwv8EnQJsY",
+          "inputResponses": {
+            "9522be0b-9768-4354-b838-baf5704d0891": {
+              "action": "decline"
+            }
+          },
+          "_meta": {
+            "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+            "io.modelcontextprotocol/clientCapabilities": {
+              "elicitation": {
+                "form": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"reserva\":null,\"reservado\":false,\"sala\":null,\"inicio\":null,\"fim\":null,\"responsavel\":null,\"politica\":null,\"motivo\":\"recusado\"}"
+            }
+          ],
+          "structuredContent": {
+            "reserva": null,
+            "reservado": false,
+            "sala": null,
+            "inicio": null,
+            "fim": null,
+            "responsavel": null,
+            "politica": null,
+            "motivo": "recusado"
+          },
+          "isError": false,
+          "resultType": "complete",
+          "_meta": {
+            "io.modelcontextprotocol/serverInfo": {
+              "name": "central-de-salas",
+              "version": "1.0.0"
+            }
+          }
+        },
+        "jsonrpc": "2.0",
+        "id": 1016
+      }
+    }
+  },
+  {
+    "label": "mcp-retry-apos-reinicio",
+    "request": {
+      "url": "http://127.0.0.1:17301/mcp",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/event-stream",
+        "MCP-Protocol-Version": "2026-07-28",
+        "Mcp-Method": "tools/call",
+        "Mcp-Name": "reservar_sala"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1017,
+        "method": "tools/call",
+        "params": {
+          "name": "reservar_sala",
+          "arguments": {
+            "sala": "sala-garagem",
+            "inicio": "2026-11-03T14:00:00-03:00",
+            "fim": "2026-11-03T15:00:00-03:00",
+            "responsavel": "Adulterado"
+          },
+          "requestState": "v1.eyJwIjp7InRvb2wiOiJyZXNlcnZhcl9zYWxhIiwicGVkaWRvIjp7InNhbGEiOiJzYWxhLWdhcmFnZW0iLCJpbmljaW8iOiIyMDI2LTExLTAzVDE0OjAwOjAwLTAzOjAwIiwiZmltIjoiMjAyNi0xMS0wM1QxNTowMDowMC0wMzowMCIsInJlc3BvbnNhdmVsIjoiRG9jIn0sImFsdGVybmF0aXZhcyI6WyJzYWxhLWZ1c2NhIiwic2FsYS1taXJhbnRlIl0sImNoYXZlIjoiOTUyMmJlMGItOTc2OC00MzU0LWI4MzgtYmFmNTcwNGQwODkxIn0sImV4cCI6MTc5MjUzMTU3MCwiYiI6Ik0yRXNZOGFYVl85VThyRE5mMENzSHcifQ.hrs1kPgHh3JfY6pX44jlemZ2u8yBS1smnUwv8EnQJsY",
+          "inputResponses": {
+            "9522be0b-9768-4354-b838-baf5704d0891": {
+              "action": "accept",
+              "content": {
+                "sala": "sala-fusca"
+              }
+            }
+          },
+          "_meta": {
+            "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+            "io.modelcontextprotocol/clientCapabilities": {
+              "elicitation": {
+                "form": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "response": {
+      "httpStatus": 200,
+      "body": {
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"reserva\":\"res-0003\",\"reservado\":true,\"sala\":\"sala-fusca\",\"inicio\":\"2026-11-03T14:00:00-03:00\",\"fim\":\"2026-11-03T15:00:00-03:00\",\"responsavel\":\"Doc\",\"politica\":\"2026-11-01\",\"motivo\":null}"
+            }
+          ],
+          "structuredContent": {
+            "reserva": "res-0003",
+            "reservado": true,
+            "sala": "sala-fusca",
+            "inicio": "2026-11-03T14:00:00-03:00",
+            "fim": "2026-11-03T15:00:00-03:00",
+            "responsavel": "Doc",
+            "politica": "2026-11-01",
+            "motivo": null
+          },
+          "isError": false,
+          "resultType": "complete",
+          "_meta": {
+            "io.modelcontextprotocol/serverInfo": {
+              "name": "central-de-salas",
+              "version": "1.0.0"
+            }
+          }
+        },
+        "jsonrpc": "2.0",
+        "id": 1017
+      }
+    }
+  }
+]

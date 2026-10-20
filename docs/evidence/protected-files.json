@@ -1,0 +1,86 @@
+{
+  "baselineCommit": "263f17e202fd861d14aa7a5e6a539d13a62857c3",
+  "files": [
+    {
+      "path": "dados/politica-de-uso.md",
+      "sha256": "3eea3712ec8a8ba42c90ed5bf3092e64020775e71e96f2a44f55e3a89d68eb08",
+      "matchesStarter": true
+    },
+    {
+      "path": "dados/reservas.json",
+      "sha256": "1758ee5a94a3221289d27b2ce8dc5f3fff0ba70251febc8b7aefe2bf2f921236",
+      "matchesStarter": true
+    },
+    {
+      "path": "dados/salas.json",
+      "sha256": "9d10747ccafbc96c9dec2e7d31869b5d3dcd27d330ca61df9d90320b03b14c58",
+      "matchesStarter": true
+    },
+    {
+      "path": "validador/README.md",
+      "sha256": "ccd6dd0727a179c71b1f4def751fec20a47d1fe92693ccb78bf2f06a7227bde1",
+      "matchesStarter": true
+    },
+    {
+      "path": "validador/validar.py",
+      "sha256": "aa5380d0c29ad577b61bc57c1ba6cbeb939e898205b30efb08db6eb585ee03c9",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/01-tools-list.json",
+      "sha256": "b194d5be8ede0f10d0c2a92aa8a2cd073042afd9736ea270cb3f4f45e4e1f79a",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/02-tools-call-livre.json",
+      "sha256": "fcd5733d44f174ddb467d323b315adbbdbb22c24b032f358591c2b72399853d9",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/03-tools-call-conflito-input-required.json",
+      "sha256": "0e130459af5864d2a4bdb6f6a717f9a81c3893a5c76d896c25e08be4d727cb90",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/04-tools-call-retry.json",
+      "sha256": "9ef8b5131ae8c0de4aeda2bb8a53d69d60f84bd2c40e95ccab126cfe0ba09efc",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/05-resources-read-politica.json",
+      "sha256": "885663eb5937dac585460a15777d93b929484be9452b274f44a2f4ddb20cb15d",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/06-erro-32021-sem-elicitation.json",
+      "sha256": "893902eedcfc7878bfa5850bf732dc688973e4202b005410b220b36b8c17303f",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/07-a2a-agent-card.json",
+      "sha256": "4ebecdb1d78777fff477ebb712eb5309b7f58f4ca9ded750c3e575a8336ebde2",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/08-a2a-send-message.json",
+      "sha256": "461be9c8f727620e19be864e94747f6733b99fdb7b4577ca012d72ded8215b2e",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/09-a2a-get-task-input-required.json",
+      "sha256": "17af483d5d3e3abe64896f036acf31f9292fd4725a08c2cb4e16da730f205fed",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/10-a2a-send-message-continuacao.json",
+      "sha256": "9aa25d8c4a00a03c66416bdc9faca622cee4a86d61c3845bde77bd01c6720bb0",
+      "matchesStarter": true
+    },
+    {
+      "path": "exemplos/wire/11-tools-call-retry-recusa.json",
+      "sha256": "63d60f668758edc32cf768ace0c4bf3256a6b7a8945c4f63c4cb706fbd97f0b9",
+      "matchesStarter": true
+    }
+  ],
+  "allUnchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "pidBefore": 56384,
+  "pidAfter": 56385,
+  "sameSecret": true,
+  "secretPersistedToEvidence": false,
+  "originalRequestId": 1014,
+  "retryRequestId": 1017,
+  "result": {
+    "reserva": "res-0003",
+    "reservado": true,
+    "sala": "sala-fusca",
+    "inicio": "2026-11-03T14:00:00-03:00",
+    "fim": "2026-11-03T15:00:00-03:00",
+    "responsavel": "Doc",
+    "politica": "2026-11-01",
+    "motivo": null
+  }
+}
